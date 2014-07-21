@@ -1,0 +1,36 @@
+.twit-profile-box {
+	background-color: #f5f5f5;
+	/*width: 66%;*/
+	/*border: 1px solid #d4d4d4;*/
+}
+
+.twit-intro {
+	width: 75%;
+	float: right;
+	margin-top: 12px;
+}
+
+.twit-profile-box:after {
+	content: " ";
+	clear: both;
+	display: table;
+}
+
+.tweet-profile-top {
+	width: 100%;
+	font-size: 14px;
+}
+
+.tweet-profile-top:after {
+	content: " ";
+	clear: both;
+	display: table;
+}
+
+.tweet {
+	margin-top: 15px;
+}
+
+.tweet-feed {
+	color: #292f33;
+}

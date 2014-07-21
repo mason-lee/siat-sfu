@@ -1,0 +1,70 @@
+/*
+ *
+ * CSS Styles for IAT381 Week 4 Lab
+ * CSS Grid Framework
+ * by Stanley Lai
+ * http://www.stanleylai.sg
+ *
+ */
+
+/* =========================================================
+ * Grid Framework
+ * ========================================================= */
+* { -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    /*height: 100%;*/
+    width: 100%;
+    max-width: 1024px;
+}
+
+.row {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden; /* CSS Quirk - so that the row will grow in height according to contents */
+}
+
+.column, .columns {
+	float: left;
+	min-height: 1px;
+}
+
+.row > .column:first-of-type, .row > .columns:first-of-type {
+	padding-left: 0;
+}
+
+.row > .column:last-of-type, .row > .columns:last-of-type {
+	padding-right: 0;
+}
+
+.one { width: 8.333333333%; }
+.two { width: 16.666666666%; }
+.three { width: 25%; }
+.four { width: 33.33333333%; }
+.five { width: 41.666666667%; }
+.six { width: 50%; }
+.seven { width: 58.333333333%; }
+.eight { width: 66.666666667%; }
+.nine { width: 75%; }
+.ten { width: 83.333333333%; }
+.eleven { width: 91.666666667%; }
+.twelve { width: 100%; }
+
+/* =========================================================
+ * Media Query Styles
+ * ========================================================= */
+
+
+/* TINY Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 0px) 
+and (max-width : 768px) {
+	.column, .columns {
+		float: none;
+	}
+	.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
+		width: 100%;
+	}	
+}
